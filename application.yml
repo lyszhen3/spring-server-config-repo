@@ -10,6 +10,14 @@ foo: baz
 
 ---
 spring:
+  profiles: lin
+  application:
+    name: consumer-demo
+
+server:
+  port: 8081
+---
+spring:
   profiles: cloud
   cloud:
     config:
